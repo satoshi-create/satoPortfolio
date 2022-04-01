@@ -1,0 +1,181 @@
+
+.container-tokyo {
+background:transparent;
+background-size: cover;
+width: 100%;
+height: 100vh;
+position: relative;
+/*animation: tokyo 6s 5s forwards;*/
+}
+.container-tokyo-anime {
+background:transparent;
+background-size: cover;
+width: 100%;
+height: 100vh;
+position: relative;
+animation: tokyo 6s 3s forwards;
+}
+
+.container-tokyo::before {
+content: '';
+background:white;
+background:url(../img/bg-tokyo04.jpg) no-repeat;
+background-size: cover;
+background-position:center center;
+position: absolute;
+top: -3px;
+bottom: -3px;
+left: -3px;
+right: -3px;
+filter: grayscale(.3);
+opacity: .6;
+}
+
+
+.heading-tokyo h1{
+    font-family: serif;
+    font-size: 6rem;
+    font-weight: bold;
+}
+.heading-tokyo h1:first-child{
+    color: white;
+    text-shadow: 4px 4px 5px #d1d1d1;
+    writing-mode:vertical-rl;
+    position: absolute;
+    top:18%;
+    left: 0;
+}
+.heading-tokyo h1:last-child{
+    color: white;
+    text-shadow: 4px 4px 5px #d1d1d1;
+    position: absolute;
+    top:2%;
+    left: 2%;
+}
+
+table.ivent-list{
+    width: 90%;
+    height: 85vh;
+/*    background: red;*/
+    overflow: hidden;
+    /*    上下中央寄せ*/
+    margin:auto;
+    position: absolute;         
+    padding: 20px;            
+    top:  0;                    
+    bottom:  0;                 
+    left:  0;                   
+    right:  0;
+
+    text-align: center;
+    border-spacing: 4px 4px;    
+    border-collapse: separate;
+}
+
+td.block{
+    text-align: center;
+    font-size:1.1em;
+    font-weight: bold;
+/*    color:white;*/
+    background:rgba(255, 255, 255, 0.34);
+    margin: 30em;
+/*    border: 2px dotted lightblue;*/
+    padding: 0.5em;
+}
+
+.tokyodroon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .6;
+    transform: scale(.6);
+    cursor: pointer;
+}
+.tokyodroon-anime{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .6;
+    transform: scale(.6);
+    display: none;
+    animation: tokyodroon 3s forwards;
+    cursor: pointer;
+}
+
+
+
+
+/*-------------------------------------------------------------------------アニメーション*/
+
+@keyframes tokyodroon{
+    0%{transform: scale(.8);
+    opacity: 1}
+    10%{transform: translate(-4em,-4em);
+    opacity: .8}
+    40%{transform: translate(-8em,-12em);}
+    80%{transform: translate(-40em,-30em)
+        scale(.6);}
+    95%{transform: translate(-60em,-20em) scale(1.2);
+    opacity: .6}
+    100%{transform: translate(-85em,-35em);
+    opacity: 0;}
+
+}
+
+@keyframes tokyo {
+0% {
+filter: sepia(1) contrast(2) brightness(200%);
+}
+
+3% {
+filter: sepia(1) contrast(2) brightness(200%);
+}
+
+6% {
+filter: brightness(20%);
+}
+
+16% {
+filter: brightness(20%);
+}
+
+16% {
+filter: brightness(400%);
+}
+}
+
+/*
+@keyframes tokyo {
+0% {
+filter: brightness(20%);
+filter: grayscale(1);
+opacity: .6;
+
+}
+
+24% {
+filter: brightness(20%);
+}
+
+26% {
+filter: sepia(1) contrast(2) brightness(200%);
+}
+
+30% {
+filter: sepia(1) contrast(2) brightness(200%);
+}
+
+32% {
+filter: brightness(20%);
+}
+
+48% {
+filter: brightness(20%);
+}
+
+48% {
+filter: brightness(400%);
+}
+}
+
+*/

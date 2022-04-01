@@ -1,0 +1,81 @@
+#droonS {
+    position: absolute;
+    margin: auto;
+    padding-right: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#droonS path {
+    fill-opacity: 0;
+    transition: fill-opacity 1s;
+}
+
+
+.clear-stroke path {
+    stroke: none;
+}
+
+
+/*add classList*/
+
+.clear-stroke path {
+    stroke: none;
+}
+
+
+.fill-1 #box > path {
+    fill: #b18306;
+    fill-opacity: 1;
+}
+.fill-2 #handle > path {
+    fill: gray;
+    fill-opacity: 1;
+}
+.fill-2 #camera > path {
+    fill: gray;
+    fill-opacity: 1;
+}
+
+.fill-3 #body > path {
+    fill: #8bc5ff;
+    fill-opacity: 1;
+}
+
+.fill-4 #propeller_circle > path {
+    fill: rgba(128, 128, 128, 0.53);
+    fill-opacity: 1;
+}
+
+.fill-5 #propeller_wing > path {
+    fill: rgba(98, 98, 98, 0.87);
+    fill-opacity: 1;
+}
+
+.fill-6 #propeller_tokki > path {
+    fill: #0016c1;
+    fill-opacity: 1;
+}
+.fill-7 #body_shadow01 > path {
+    fill: #78a8d8;
+    fill-opacity: 1;
+}
+.fill-8 #body_shadow02 > path {
+    fill: #b3ecfd;
+    fill-opacity: 1;
+}
+.fill-8 #camera_shadow > path {
+    fill: #ffff06;
+    fill-opacity: 1;
+}
+.fill-9 #camera_lite > path {
+    fill: yellow;
+    fill-opacity: 1;
+}
+.fill-10 #text > path {
+    fill: black;
+    fill-opacity: 1;
+}
+

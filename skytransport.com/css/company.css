@@ -1,0 +1,42 @@
+
+table{
+/*
+    width: 60%;
+    height: 60%;
+*/
+    width: 1000px;
+    height: 500px;
+    position:absolute;
+    margin: auto;
+    padding-right: 20px;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+table{
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid #a5a1a1;
+/*    padding: 0.2em;*/
+}
+td:first-child{
+    background: #c3e2ef;
+    text-align: center;
+}
+td:nth-child(2){
+    padding-left: 1em;
+}
+
+
+
+.footer{
+    width: 80%;
+    position: absolute;
+    bottom:0;
+    margin:0 10%;
+    color:gray;
+    text-align: center;
+}

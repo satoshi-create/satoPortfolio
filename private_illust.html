@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>private_illust</title>
+        <meta name="discription" content="職業訓練でグラフィックデザインを学ぶSatoのポートフォリオです">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/private.css">
+        <link rel="stylesheet" type="text/css" href="css/ress.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+		<link href="css/jquery.mmenu.all.css" rel="stylesheet" />
+		
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
+
+		
+
+
+        
+<!--ライトボックス-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+
+<!--        ページ内ヌルヌル-->
+		
+        <script type="text/javascript">
+            $(function() {
+                $('a[href^=#]').click(function() {
+                    var speed = 1000;
+                    var href = $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $("html, body").animate({
+                        scrollTop: position
+                    }, speed, "swing");
+                    return false;
+                });
+            });
+        </script>
+	
+		
+	<!--  ちょっとスクロールしたら「トップへ戻るボタン」を表示-->
+<script>
+	$(function() {
+		
+    var topBtn = $('.footer_cut');
+		
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+	
+</script>
+		
+				
+<!--mmenu-->
+<script src="js/jquery.mmenu.all.js" ></script> 
+<!--javascript追記-->
+<script>
+$(function() {
+    $("#menu").mmenu({
+        extensions: ["position-right"]
+    })
+});
+</script>
+
+		
+		
+    </head>
+
+
+    <body>
+       
+        <!--       headerここから-->
+		
+        <div class="nav">
+            <a href="home.html"><img src="img/title.png"></a>
+        </div>		
+				    
+<div class="nav-sp sp">
+		
+	<div id="page">
+	  <div class="header">
+		  <a href="#menu"></a>  
+		
+	</div>
+	</div>
+	<nav id="menu">
+	  <ul>
+		<li><a href="home.html">HOME</a></li>
+		<li><span>TASKS</span>
+			<ul>
+			<li><a href="tasks_logo.html">ロゴ</a></li>
+			<li><a href="tasks_characterr.html">キャラクター</a>
+			</li>
+			<li><a href="tasks_gousei.html">コラージュ</a></li>
+			<li><a href="tasks_CD.html">CDジャケット</a></li>
+			<li><a href="tasks_banner.html">バナー</a></li>
+			<li><a href="tasks_map.html">地図</a></li>
+			<li><a href="tasks_list.html">リスト</a></li>
+			<li><a href="tasks_magazin.html">雑誌</a></li>
+		  </ul>
+		</li>
+		<li><span>PRIVATE</span>
+			<ul>
+		<li><a href="private_photo.html">PHOTO</a></li>
+		<li><a href="private_illust.html">ILLUST</a></li>
+		  </ul>
+		</li>
+		<li><a href="">CONTACT</a>
+		  </li>
+	  </ul>
+	</nav>
+
+
+	
+	</div>
+
+		
+		
+		
+
+        <!-- コンテンツここから-->
+        
+        <div class="private_title">
+            <img src="img/illust_title.png">
+        </div>
+
+        <div class="container">
+
+
+
+
+            <section class="private_section">
+
+                <div class="private_grid_title">
+                    <img src="img/illust_title_passage.png">
+                </div>
+
+                <div class="private_grid">
+
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_passsage01.png" data-lightbox="abc" data-title="通行人">
+                        <img src="img/illust_thumb_passsage01.png" alt="通行人">
+                        </a>
+                    </div>
+                    <div class="private_grid_item">
+                        <a href="img/illust_passsage02.png" data-lightbox="abc" data-title="銀杏通り">
+                        <img src="img/illust_thumb_passsage02.png" alt="銀杏通り">
+                        </a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_passsage03.png" data-lightbox="abc" data-title="通学路">
+                        <img src="img/illust_thumb_passsage03.png" alt="通学路">
+                        </a>
+                    </div>
+                    <div class="private_grid_item">
+                        <a href="img/illust_passsage04.png" data-lightbox="abc" data-title="公衆電話">
+                        <img src="img/illust_thumb_passsage04.png" alt="公衆電話">
+                        </a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_passsage05.png" data-lightbox="abc" data-title="梅雨">
+                        <img src="img/illust_thumb_passsage05.png" alt="梅雨">
+                        </a>
+                    </div>
+                    <div class="private_grid_item">
+                        <a href="img/illust_passsage06.png" data-lightbox="abc" data-title="朝の眠り">
+                        <img src="img/illust_thumb_passsage06.png" alt="朝の眠り">
+                        </a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_passsage07.png" data-lightbox="abc" data-title="木陰">
+                        <img src="img/illust_thumb_passsage07.png" alt="木陰">
+                        </a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_passsage08.png" data-lightbox="abc" data-title="落葉">
+                        <img src="img/illust_thumb_passsage08.png" alt="落葉">
+                        </a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_passsage09.png" data-lightbox="abc" data-title="虫捕り">
+                        <img src="img/illust_thumb_passsage09.png" alt="虫捕り">
+                        </a>
+                    </div>
+ 
+
+
+                </div>
+
+
+            </section>      
+
+            <section class="private_section">
+
+                <div class="private_grid_title">
+                    <img src="img/illust_title_collage.png">
+                </div>
+
+
+                <div class="private_grid">
+
+                    <div class="private_grid_item">
+                        <a href="img/illust_collage01.png" data-lightbox="abc" data-title="傘カエル"><img src="img/illust_thumb_collage01.png" alt="傘カエル"></a>
+                    </div>
+                    <div class="private_grid_item">
+                        <a href="img/illust_collage02.png" data-lightbox="abc" data-title="サーファーとミユビシギ"><img src="img/illust_thumb_collage02.png" alt="サーファーとミユビシギ"></a>
+                    </div>
+                    <div class="private_grid_item">
+                        <a href="img/illust_collage03.png" data-lightbox="abc" data-title="月夜のバッタ"><img src="img/illust_thumb_collage03.png" alt="月夜のバッタ"></a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_collage04.png" data-lightbox="abc" data-title="浜辺のうた"><img src="img/illust_thumb_collage04.png" alt="浜辺のうた"></a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_collage05.png" data-lightbox="abc" data-title="モダンステーション"><img src="img/illust_thumb_collage05.png" alt="モダンステーション"></a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_collage06.png" data-lightbox="abc" data-title="漂流
+                        "><img src="img/illust_thumb_collage06.png" alt="漂流
+                        "></a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_collage07.png" data-lightbox="abc" data-title="おくりびと"><img src="img/illust_thumb_collage07.png" alt="おくりびと"></a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_collage08.png" data-lightbox="abc" data-title="決死隊"><img src="img/illust_thumb_collage08.png" alt="決死隊"></a>
+                    </div>
+                    <div class="private_grid_item pc">
+                        <a href="img/illust_collage09.png" data-lightbox="abc" data-title="サクラサク"><img src="img/illust_thumb_collage09.png" alt="サクラサク"></a>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+
+
+        <!--         フッターここから      -->
+
+        <div class="footer">
+           
+            <div class="footer_cut">
+                <a href="#">
+                
+                    <img src="img/private_illust_cut.png" onmouseover="this.src='img/private_illust_cut-hover.png'" onmouseout="this.src='img/private_illust_cut.png'" />
+
+                
+                </a>
+            </div>
+
+            
+            <div class="footer_icon">
+                <div class="footer_icon-prev">
+                    <a href="private_photo.html">
+                        <img src="img/tasks_icon_prev.png">
+                    </a>
+                </div>
+                <div class="footer_icon-next">
+                    <a href="private_photo.html">
+                        <img src="img/tasks_icon_next.png">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="footer-items">
+
+                <div class="footer-item box1">
+                    <a href=""><p><small>TWITTER</small></p></a>
+                </div>
+                <div class="footer-item box2">
+                    <a href="mailto:info@test.com">
+                        <p><small>MAIL</small></p></a>
+                </div>
+            </div>
+
+            <p class="footer_copy"><small>&copy;2018 sato all right reserved</small></p>
+
+        </div>
+
+
+
+    </body>
+</html>

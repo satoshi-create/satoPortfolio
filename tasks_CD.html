@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tasks_CDジャケット</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/tasks.css">
+    <link rel="stylesheet" type="text/css" href="css/ress.css">
+    <meta name="discription" content="職業訓練でグラフィックデザインを学ぶSatoのポートフォリオです">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="css/jquery.mmenu.all.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <!--        ページ内ヌルヌル-->
+    <script type="text/javascript">
+        $(function() {
+            $('a[href^=#]').click(function() {
+                var speed = 1000;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({
+                    scrollTop: position
+                }, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+
+
+    <!--  ちょっとスクロールしたら「トップへ戻るボタン」を表示-->
+    <script>
+        $(function() {
+
+            var topBtn = $('.footer_cut');
+
+            topBtn.hide();
+            //スクロールが100に達したらボタン表示
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <!--mmenu-->
+    <script src="js/jquery.mmenu.all.js"></script>
+    <!--javascript追記-->
+    <script>
+        $(function() {
+            $("#menu").mmenu({
+                extensions: ["position-right"]
+            })
+        });
+    </script>
+
+    </head>
+
+
+
+<body>
+    <!--       headerここから-->
+    <div class="nav">
+        <a href="home.html">
+            <img src="img/title.png"></a>
+    </div>
+
+    <div class="nav-sp sp">
+
+        <div id="page">
+            <div class="header">
+
+                <a href="#menu"></a>
+
+            </div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><span>TASKS</span>
+                    <ul>
+                        <li><a href="tasks_logo.html">ロゴ</a></li>
+                        <li><a href="tasks_characterr.html">キャラクター</a>
+                        </li>
+                        <li><a href="tasks_gousei.html">コラージュ</a></li>
+                        <li><a href="tasks_CD.html">CDジャケット</a></li>
+                        <li><a href="tasks_banner.html">バナー</a></li>
+                        <li><a href="tasks_map.html">地図</a></li>
+                        <li><a href="tasks_list.html">リスト</a></li>
+                        <li><a href="tasks_magazin.html">雑誌</a></li>
+                    </ul>
+                </li>
+                <li><span>PRIVATE</span>
+                    <ul>
+                        <li><a href="private_photo.html">PHOTO</a></li>
+                        <li><a href="private_illust.html">ILLUST</a></li>
+                    </ul>
+                </li>
+                <li><a href="mailto:mimizunobouken@gmail.com" alt="mail">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+    </div>
+    <!--       コンテンツここから-->
+
+    <div class="tasks_img CD_img">
+
+        <div class="tasks_img_title">
+            <img src="img/tasks_CD_title02.png">
+        </div>
+
+        <div class="items_grid CD_img_items">
+
+            <div class="CD_img_item">
+                <img src="img/tasks_CD01.png">
+                <p class="tasks_img_text">ジャケット</p>
+            </div>
+            <div class="CD_img_item">
+                <img src="img/tasks_CD02.png">
+                <p class="tasks_img_text">レーベル</p>
+            </div>
+            <div class="CD_img_item">
+                <img src="img/tasks_CD03.png">
+                <p class="tasks_img_text">バックインレイ（ウラ）</p>
+            </div>
+            <div class="CD_img_item">
+                <img src="img/tasks_CD04.png">
+                <p class="tasks_img_text">バックインレイ（オモテ）</p>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="tasks_text">
+        <div class="container">
+
+            <div class="text_concept">
+                <h3 class="text_h3 concept">コンセプト</h3>
+            <div class="tasks_text-layout sp">
+<p>現代音楽の作曲家、伊福部昭氏は「ゴジラ」のテーマ音楽の作曲者として有名ですが、彼が「ositinato」という手法をもちいて、数多くの作品を遺したことは、あまり知られていないように思います。</p>
+<p>「ostinato（オスティナート）」は、同一のモチーフ（旋律）を執拗に反復する手法で、ルネサンス期に隆盛をむかえましたが、メロディを重視する近代にはいると、省みられることがなくなりました。しかし、そんななかでも、ベートーヴェンの第5交響曲「運命」や、ボレロの「ラヴェル」は、ostinatoの手法をもちいて作曲されています。</p>
+<p>伊福部氏は、「反復すること其れ自体に重要な意味がある」という意志のもと、ostinatoの手法をもちいて、アイヌの民謡や日本の祭りなど、民族的・土着的な力強い音楽を数多く作曲しました。そのスタイルは後進の作曲家に多大な影響をあたえ、また現代音楽の一手法であるミニマルミュージックに引き継がれています。</p><p>本課題では、「ostinato」に焦点をあて、伊福部氏の音楽的手法をデザイン的に表現することをこころみました。</p>
+            </div>
+            <div class="tasks_text-layout pc">
+<p>現代音楽の作曲家、伊福部昭氏は「ゴジラ」のテーマ音楽の作曲者として有名ですが、彼が「ositinato」という手法をもちいて、数多くの作品を遺したことは、あまり知られていないように思います。</p>
+<p>「ostinato（オスティナート）」は、同一のモチーフ（旋律）を執拗に反復する手法で、ルネサンス期に隆盛をむかえましたが、メロディを重視する近代にはいると、省みられることがなくなりました。しかし、そんななかでも、ベートーヴェンの第5交響曲「運命」や、ボレロの「ラヴェル」は、ostinatoの手法をもちいて作曲されています。</p>
+<p>伊福部氏は、「反復すること其れ自体に重要な意味がある」という意志のもと、ostinatoの手法をもちいて、アイヌの民謡や日本の祭りなど、民族的・土着的な力強い音楽を数多く作曲しました。そのスタイルは後進の作曲家に多大な影響をあたえ、また現代音楽の一手法であるミニマルミュージックに引き継がれています。本課題では、伊福部氏の「ostinato」に焦点をあて、彼の音楽的手法をデザイン的に表現することをこころみました。</p>
+            </div>
+            </div>
+
+            <div class="text_prosess">
+                <h3 class="text_h3 prosess">制作過程</h3>
+            <div class="tasks_text-layout sp">
+<p>「ositnato」という手法の特徴から、「楽器を抱えたゴジラが執拗に迫ってくる」姿が思い浮かび、ジャケットは、チューバを抱えたゴジラが迫ってくるようなデザインにしました。</p><p>
+バックインレイとレーベルは、流氷とゴジラを組み合わせて制作し、北海道出身である伊福部氏のルーツと、民族的・土着的な性質をもつ彼の音楽を表現しました。</p><p>
+ジャケットがインパクトのあるデザインになったので、バックインレイとレーベルはセピア調のなトーンにし、本CDの1曲目に収録した「ゴジラ」の激しさ・力強さと、2曲目に収録した「タプカーラ交響曲」のlent-Adagio部分の静謐さの対比がデザインで伝わるようにこころがけました。
+</p>
+                </div>
+            <div class="tasks_text-layout pc">
+<p>「ositnato」という手法の特徴から、「楽器を抱えたゴジラが執拗に迫ってくる」姿が思い浮かび、ジャケットは、チューバを抱えたゴジラが迫ってくるようなデザインにしました。
+バックインレイとレーベルは、流氷とゴジラを組み合わせて制作し、北海道出身である伊福部氏のルーツと、民族的・土着的な性質をもつ彼の音楽を表現しました。</p><p>
+ジャケットがインパクトのあるデザインになったので、バックインレイとレーベルはセピア調のなトーンにし、本CDの1曲目に収録した「ゴジラ」の激しさ・力強さと、2曲目に収録した「タプカーラ交響曲」のlent-Adagio部分の静謐さの対比がデザインで伝わるようにこころがけました。
+</p>
+            </div>
+            </div>
+
+            <div class="text_time">
+                <p>2018年10月 / 約10時間<br>
+                    <small>（制作時期 / 制作時間）</small></p>
+                <img src="img/tasks_ps.png">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="moretasks pc">
+
+
+
+        <div class="moretasks_items_title">
+            <img src="img/tasks_moretasks.png">
+        </div>
+
+        <div class="moretasks_items">
+            <div class="moretasks_item sp">
+                <a href="tasks_CD.html">
+                    <img src="img/home_tasks_CD.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_banner.html">
+                    <img src="img/home_tasks_banner.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_map.html">
+                    <img src="img/home_tasks_map.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_list.html">
+                    <img src="img/home_tasks_list.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_magazin.html">
+                    <img src="img/home_tasks_magazin.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_logo.html">
+                    <img src="img/home_tasks_logo.png">
+                </a>
+            </div>
+
+            <div class="moretasks_item">
+                <a href="tasks_characterr.html">
+                    <img src="img/home_tasks_chara.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_gousei.html">
+                    <img src="img/home_tasks_gousei.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--         フッターここから      -->
+    <div class="footer">
+       
+        <div class="footer_cut">
+            <a href="#">
+                <img src="img/tasks_logo_cut.png" onmouseover="this.src='img/tasks_logo_cut-hover.png'" onmouseout="this.src='img/tasks_logo_cut.png'" />
+
+                
+            </a>
+        </div>
+
+        
+        <div class="footer_icon sp">
+            <div class="footer_icon-prev">
+                <a href="tasks_gousei.html">
+                    <img src="img/tasks_icon_prev.png">
+                </a>
+            </div>
+            <div class="footer_icon-prev">
+            <a href="tasks_banner.html">
+                <img src="img/tasks_icon_next.png">
+            </a>
+        </div>
+        </div>
+
+
+        <div class="footer-items">
+
+            <div class="footer-item box1">
+                <a href="">
+                    <p><small>TWITTER</small></p>
+                </a>
+            </div>
+            <div class="footer-item box2">
+                <a href="mailto:info@test.com">
+                    <p><small>MAIL</small></p>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer_copy"><small>&copy;2018 sato all right reserved</small></p>
+
+    </div>
+
+
+
+</body>
+
+</html>

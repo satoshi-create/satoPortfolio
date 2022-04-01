@@ -1,0 +1,301 @@
+#skytransport{
+        position: absolute;
+        top: calc(50% - 3em);
+        left: calc(50% - 15em);
+        fill: none;
+        stroke: none;
+        /*線の色を指定する*/
+        stroke-dasharray: 2000;
+        /*線の間隔を指定する*/
+        stroke-dashoffset: 0;
+        /*線の位置を指定する(IEは効かない属性)*/
+        stroke-width: 1;
+        /*線の太さを指定する*/
+        -webkit-animation: skytransport .5s 13s ease-in-out forwards;
+        animation: skytransport .5s 13s ease-in-out forwards;
+    }
+
+        #rainbow {
+            position: absolute;
+            top: calc(50% - 10em);
+            left: calc(50% - 12em);
+            fill: none;
+            stroke: none;;
+            /*線の色を指定する*/
+            stroke-dasharray: 2000;
+            /*線の間隔を指定する*/
+            stroke-dashoffset: 0;
+            /*線の位置を指定する(IEは効かない属性)*/
+            stroke-width: 1;
+            /*線の太さを指定する*/
+            -webkit-animation: rainbow .5s 13s linear forwards;
+            animation: rainbow .5s 13s linear forwards;
+            transform-style: preserve-3d;
+
+        }
+
+        #cloud {
+            position: absolute;
+            top: calc(50% - 9em);
+            left: calc(50% - 13em);
+            fill: none;
+            stroke: none;
+            /*線の色を指定する*/
+            stroke-dasharray: 2000;
+            /*線の間隔を指定する*/
+            stroke-dashoffset: 0;
+            /*線の位置を指定する(IEは効かない属性)*/
+            stroke-width: 1;
+            /*線の太さを指定する*/
+            -webkit-animation: cloud 2s 8s ease-in-out forwards;
+            animation: cloud 2s 8s ease-in-out forwards;
+/*            transform-style: preserve-3d;*/
+
+        }
+
+ #bird_small {
+            position: absolute;
+            top: calc(50% + 2em);
+            left: calc(50% + 12em);
+            fill: none;
+            stroke: rgb(255, 216, 3);
+            /*線の色を指定する*/
+            stroke-dasharray: 2000;
+            /*線の間隔を指定する*/
+            stroke-dashoffset: 0;
+            /*線の位置を指定する(IEは効かない属性)*/
+            stroke-width: 1;
+            /*線の太さを指定する*/
+            -webkit-animation: b_small 10s ease-in-out forwards;
+            animation: b_small 10s ease-in-out forwards;
+            transform-style: preserve-3d;
+
+        }
+        #bird_big {
+            position: absolute;
+            top: calc(50% + 1em);
+            left: calc(50% + 10em);
+/*            margin: 0 0 0 -238px;*/
+            fill: none;
+            stroke: rgb(103, 173, 255);
+            /*線の色を指定する*/
+            stroke-dasharray: 2000;
+            /*線の間隔を指定する*/
+            stroke-dashoffset: 0;
+            /*線の位置を指定する(IEは効かない属性)*/
+            stroke-width: 1;
+            /*線の太さを指定する*/
+            -webkit-animation: b_big 10s ease-in-out forwards;
+            animation: b_big 10s ease-in-out forwards;
+            transform-style: preserve-3d;
+
+        }
+
+
+
+/*----------------------------------------------------------------------------------------アニメーション*/
+
+@keyframes skytransport {
+    0% {
+        stroke-dashoffset: 2000;
+        fill: transparent;
+        stroke:black;
+    }
+
+    50% {
+        stroke:black;
+        fill: transparent;
+    }
+
+    100% {
+        stroke:none;
+        stroke-dashoffset: 0;
+        fill: black;
+    }
+}
+
+
+
+@keyframes rainbow {
+0% {
+/*stroke-dasharray:2000;*/
+fill: purple;
+    opacity: 0.1;
+/*    transform: rotate(-20deg);*/
+    }
+    20%{
+        fill:blue;
+    opacity: 0.2;
+transform:rotate(20deg);
+    }
+    40%{fill:green;
+    opacity: 0.3;
+        transform:rotate(-20deg);
+    }
+    
+
+60% {
+fill: red;
+    opacity: 0.3;
+    transform:rotate(20deg);
+}
+
+80% {
+/*    fill: purple;*/
+    fill: url(#g);
+/*transform:translate(-2em,-2em);*/
+    transform:rotate(-20deg);
+    opacity: 0.3;
+}
+    90%{
+    fill: url(#g);
+/*transform:translate(-2em,-2em)  rotate(-2deg);*/
+        transform:rotate(20deg);
+    opacity: 0.6;
+        
+    }
+100% {
+/*        stroke-dashoffset: 0;*/
+    fill: url(#g);
+/*transform:translate(-2em,-2em) rotate(-2deg);*/
+    opacity: 0.8;
+}
+}
+
+        
+@keyframes cloud {
+0% {
+stroke-dashoffset: 2000;
+    stroke:#b9ebff;
+fill: transparent;
+}
+
+50% {
+    stroke:#b9ebff;
+fill: transparent;
+    }
+
+100% {
+stroke-dashoffset: 0;
+    stroke:#b9ebff;
+    fill: skyblue;
+}
+}
+        
+
+
+        @keyframes b_small {
+            0% {
+                stroke-dashoffset: 2000;
+                fill: transparent;
+                transform: rotateX(-90deg);
+                /*透過*/
+            }
+            20%{
+                fill: transparent;
+                transform:translate(-20%,-20%);
+            }
+            25%{
+                fill: transparent;
+                transform: skewX(-20deg) rotateX(10deg);
+            }
+            30% {
+                fill: transparent;
+                transform:translate(-5em,-3em) skewX(-25deg) rotateX(-10deg);
+                
+            }
+            35%{
+                fill: transparent;
+                transform:translate(-8em,-1em) skewX(20deg);
+/*                transform: skewX(20deg);*/
+            }
+            40%{
+                fill: transparent;
+                transform:translate(-15em,-7em) skewX(-20deg);
+                
+            }
+            45%{
+                fill: transparent;
+                transform:translate(-20em,-4em) skewX(20deg);
+                
+            }
+            50%{
+                fill: transparent;
+                transform:translate(-25em,-10em) skewX(-20deg);
+                
+            }
+            55%{
+                stroke-dashoffset: 0;
+/*                opacity: 0.4;*/
+                transform:translate(-25em,-10em) skewX(10deg);
+            }
+            65%{
+                opacity: 1;
+                transform:translate(-25em,-10em) rotateX(-10deg);
+                
+            }
+            100%{
+                fill: rgb(255, 216, 3);
+                transform:translate(-25em,-10em);
+            }
+
+        }
+        
+        
+        @keyframes b_big {
+            0% {
+                opacity: 0;
+                /*透過*/
+                stroke-dashoffset: 2500;
+            }
+            
+            20%{
+                transform: rotateX(-90deg);
+                fill: transparent;
+                transform:translate(-20%,-20%);
+            }
+            30%{
+                fill: transparent;
+                transform: skewX(-20deg) rotateX(10deg);
+            }
+            35% {
+                fill: transparent;
+                transform:translate(-5em,-3em) skewX(-25deg) rotateX(-10deg);
+                
+            }
+            40%{
+                fill: transparent;
+                transform:translate(-8em,-1em) skewX(20deg);
+/*                transform: skewX(20deg);*/
+            }
+            45%{
+                fill: transparent;
+                transform:translate(-15em,-7em) skewX(-20deg);
+                
+            }
+            55%{
+                fill: transparent;
+                transform:translate(-20em,-4em) skewX(20deg);
+                
+            }
+            60%{
+                fill: transparent;
+                transform:translate(-25em,-10em) skewX(-20deg);
+                
+            }
+            65%{
+                stroke-dashoffset: 0;
+/*                opacity: 0.4;*/
+                transform:translate(-25em,-10em) skewX(10deg);
+            }
+            75%{
+                opacity: 1;
+                transform:translate(-25em,-10em) rotateX(10deg);
+                
+            }
+            100%{
+                fill: rgb(103, 173, 255);
+                transform:translate(-25em,-10em);
+            }
+
+        }

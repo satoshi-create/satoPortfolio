@@ -1,0 +1,264 @@
+@charset="utf-8";
+
+/*スマホサイズ*/
+
+/*全般*/
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+/*    line-height: 1.5;*/
+    color:#535353;
+    background: #eaeaea;
+    margin: 0 auto;
+    
+}
+
+img{
+    max-width: 100%;
+/*    vertical-align: middle;*/
+}
+
+
+
+a{
+    color:#535353;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color:#ff3f3f;
+    opacity:0.6;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*レイアウト*/
+
+
+.container-top{
+    background: no-repeat url(../img/11.png);
+    background-size:cover;
+    background-position: center center;
+}
+
+
+.img-pc{
+    display: none;
+}
+
+
+.nav-top{
+    padding: 5px;    
+}
+
+.header-top,
+.contents-top{
+/*    margin-bottom: 2rem;*/
+}
+
+.header-top{
+    padding: 1rem;
+    text-align: center;
+}
+
+.container-top{
+/*    padding: 2rem;*/
+}
+
+.contents-top{
+    text-align: center;
+    padding: 10px;
+}
+
+.contents-top__item{
+    height: 6rem;
+    width: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.6rem;
+}
+
+
+
+
+
+
+.address,
+.map-top{
+/*    margin-bottom: 1rem;*/
+}
+
+
+
+/*装飾ここから*/
+
+
+.nav-top{
+    background-color: pink;
+}
+
+.nav-top > h3{
+    color:red;
+    margin: 0;
+    padding-left:0.6rem;
+    border-left:6px solid red;
+}
+
+.nav-top > p{
+    font-size:0.8rem;
+}
+
+
+.header-top{
+    background-color:#bfe289;
+}
+
+.contents-top__item{
+    background-color: #dadaff;
+}
+
+.contents-top__item a{
+    display: block;
+}
+
+.contents-top__item a > h1{
+    font-weight:normal;
+}
+
+
+
+.contents-top__item.hogo{
+    background-color:rgba(255, 239, 193, 0.59);}
+.contents-top__item.kodomo{background-color:rgba(198, 255, 179, 0.6);}
+.contents-top__item.chiiki{background-color:rgba(224, 242, 255, 0.53);}
+
+.contents-top__item.hogo:hover{
+    background-color:#ffefc1;}
+.contents-top__item.kodomo:hover{background-color:#c6ffb3;}
+.contents-top__item.chiiki:hover{background-color:#e0f2ff;}
+
+
+.footer{
+    background-color: rgba(233, 233, 233, 0.2);
+}
+
+.footer__img{
+    width:8rem;
+    border-radius:1rem;
+}
+
+
+.copyright{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*PC版*/
+
+
+@media screen and (min-width:768px){
+
+/*レイアウト*/
+    
+    body{
+        width: 1000px;
+    }
+    
+    .container-top{
+    background: no-repeat url(../img/10.png);
+    background-size: cover;
+    background-position: center center;
+}
+    
+
+
+
+
+    .img-pc{
+        display: block;
+    }
+    
+    .header-top{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .header-top > .copy,
+    .header-top > .icon{
+        width:30%;
+    }
+    .header-top > .copy{
+        position: absolute;
+        right:45%;
+        bottom:25%;
+    }
+    .header-top > .icon{
+        position: absolute;
+        right:1%;
+        bottom:6%;
+    }
+    
+    
+    .contents-top{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contents-top__item{
+        width: 300px;
+        height: 300px;
+        padding-top:120px;
+    }
+    
+    .footer{
+        position: relative;
+    }
+    .footer__address{
+    position: absolute;
+    right: 52%;
+    bottom:10%;
+    }
+    .footer >.icon2{
+        position: absolute;
+        right: 0;
+        bottom: -2rem;
+        width: 20rem;
+    }
+    
+    
+
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+

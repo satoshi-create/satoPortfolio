@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/*全般*/
+
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 16px;
+    margin:auto;
+    background: #ebebeb;
+    color:#6d6d6d;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#6d6d6d;
+    display: block;
+}
+
+a:hover{
+    opacity: 0.8;
+    color:#e3e3e3;
+}
+
+
+.pc{
+    display: none;
+}
+
+
+/*スマホ版*/
+
+/*共通*/
+
+
+/*mmenu*/
+
+
+
+nav:not(.mm-menu) {
+    display: none;
+}
+
+
+.header {
+    /* background: rgba(255, 255, 255, 0.33);*/
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+    position: fixed;
+    top: 2px;
+    right: 2px;
+}
+
+.header a {
+    background: center center no-repeat transparent;
+    background-image: url(../img/mmenu_icon.png);
+    background-size:70%;
+    padding:1.2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*mmenuここまで*/
+
+
+
+
+.tasks_img{
+	padding:3rem;
+}
+
+.tasks_img_title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.items_grid{
+    text-align: center;
+}
+
+.tasks_img_text{
+    font-weight: bold;
+    
+}
+.text_h3{
+    font-weight:normal;
+    width: 8rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+	
+}
+    
+.text_h3.concept{
+    background:#ffcbd4;
+}
+.text_h3.prosess{
+    background:#beecff;
+}
+
+.tasks_text{
+    background: #f8f8f8;
+    padding: 2rem;
+}
+
+.text_concept,
+.text_prosess{
+	padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.tasks_text-layout > h4{
+    padding: 0.5rem 0;
+}
+.tasks_text-layout > p{
+    margin-bottom: 1rem;
+}
+
+.text_time{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.text_time > p{
+/*    padding-right: 1rem;*/
+    text-align: right;
+}
+
+
+.moretasks{
+    background:#f2f1f1; 
+}
+
+
+.footer{
+    background: #fff;
+/*    position: relative;*/
+}
+
+.footer_icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+
+.footer_icon-prev:hover{
+    transform: scale(1.3);
+}
+.footer_icon-next:hover{
+    transform: scale(1.3);
+}
+
+
+.footer-items{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.footer-item{
+    padding: 2px;
+}
+.footer-item > a{
+    color: #bababa;
+}
+.footer-item.box1 > a:hover{
+    color: #a7e6ff;
+}
+.footer-item.box2 > a:hover{
+    color: #ffa7cc;
+}
+.footer_copy{
+    color: #bababa;
+    text-align: center;
+}
+
+.footer_cut{
+/*    position: absolute;*/
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    width: 180px;
+    height: auto;
+}
+
+
+.footer_cut > a:hover{
+    transform: scale(1.1);
+    transform-origin: bottom right;
+}
+
+
+
+.items_grid{
+    padding: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns:auto;
+    grid-template-rows:auto;
+    justify-content: center;
+}
+
+
+.tasks_site_link > a{
+    text-align: center;
+    padding:1rem;
+    color: red;
+}
+.under{
+    border-bottom: dashed 1px red;
+}
+
+
+
+
+/*パソコン版*/
+
+
+@media(min-width:768px){
+    
+/*    共通*/
+    
+/*
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+*/
+
+
+
+    
+    .tasks_text{
+        padding:4rem;
+    }
+
+    
+
+    .pc{
+        display: block;
+    }
+
+    .sp{
+        display: none;
+    }
+    
+    
+
+    
+    .moretasks{
+        position: relative;
+        width: 500px;
+        height:250px;
+        margin: 2rem auto 0;
+    }
+    
+    
+    .moretasks_items_title{
+        position: absolute;
+        left: -8%;
+        top: -3%;
+    }
+
+    
+    .moretasks_items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: absolute;
+        top:30%;
+        left:10%;
+        
+    }
+    .moretasks_item{
+        width:100px;
+        height: auto;
+    }
+    
+    
+/*    ロゴ*/
+    
+    .logo_img_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+        justify-content: center;
+    }
+    
+/*キャラクター*/
+    
+    .chara_img_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+        justify-content: center;
+    }
+    
+/* コラージュ*/
+    
+    .gousei_img_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+        justify-content: center;
+    }
+	
+	.gousei_img_item.box1{
+		grid-column: 1/3;
+        grid-row:1/2;
+/*		padding-left: 5rem;*/
+/*        background: #000;*/
+
+	}
+	
+		
+    
+/* CD*/
+    
+    .CD_img_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+        justify-content: center;
+    }
+    
+/*   バナー */
+
+    .banner_img_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+/*
+        grid-template-rows:400px 400px 150px;
+        grid-template-columns:500px 400px;
+*/
+        justify-content: center;
+    }
+    .banner_img_item.box1{
+/*        background: #000;*/
+        padding-left: 5rem;
+    }
+    .banner_img_item.box3{
+/*        background: #000;*/
+        padding-top: 4rem;
+        grid-column: 1/3;
+    }
+
+
+/*  マガジン  */
+    
+    .magazin_img_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+        justify-content: center;
+    }
+    
+/* webサイト*/
+    
+    
+/*保育園サイト*/
+/*
+    .site_img_items{
+        display: grid;
+        grid-row-gap: 4rem;
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr,1fr));
+        justify-content: center;
+    }
+    
+    .site_img_item.box1{
+        grid-column: 2/3;
+        grid-row:1/2;
+    }
+    .site_img_item.box2{
+        grid-column: 1/2;
+        grid-row:2/3;
+    }
+    .site_img_item.box3{
+        grid-column: 2/3;
+        grid-row:2/3;
+    }
+    .site_img_item.box4{
+        grid-column: 3/4;
+        grid-row:2/3;
+    }
+*/
+/*
+    .site_img_item.box5{
+        margin-left: 10rem;
+        grid-column: 2/3;
+        grid-row:3/4;
+        width: 30%;
+    }
+    .site_img_item.box6{
+        margin-right: 10rem;
+        grid-column: 3/4;
+        grid-row:3/4;
+        width: 30%;
+    }
+    
+*/
+    

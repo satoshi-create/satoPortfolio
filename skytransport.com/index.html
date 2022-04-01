@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<title>CONTACT</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<!--<link rel="stylesheet" type="text/css" href="css/reset.css" />-->
+<link rel="stylesheet" type="text/css" href="css/ress.css" />
+<link rel="stylesheet" type="text/css" href="css/background.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/mailform.css" />
+    
+        <link rel="stylesheet" href="css/meanmenu.css">
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+        <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/scrit.js"></script>
+
+
+
+
+
+    
+</head>
+<body>
+    
+            <!--meenmenu-->
+
+    <nav>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="index.html">contact</a></li>
+        </ul>
+    </nav>
+
+
+
+	<form action="php/mailform.php" method="post" id="mail_form">
+		<dl>
+			<dt>会社名<span>Company Name</span></dt>
+			<dd><input type="text" id="company" name="company" value="" /></dd>
+			
+			<dt>名前<span>Your Name</span></dt>
+			<dd class="required"><input type="text" id="name_1" name="name_1" value="" /> <input type="text" id="name_2" name="name_2" value="" /></dd>
+			
+			<dt>ふりがな<span>Name Reading</span></dt>
+			<dd><input type="text" id="read_1" name="read_1" value="" /> <input type="text" id="read_2" name="read_2" value="" /></dd>
+			
+			<dt>メールアドレス<span>Mail Address</span></dt>
+			<dd class="required"><input type="email" id="mail_address" name="mail_address" value="" /></dd>
+			
+			<dt>メールアドレス<br />(確認用)<span>Mail Address Confirm</span></dt>
+			<dd><input type="email" id="mail_address_confirm" name="mail_address_confirm" value="" /></dd>
+						
+			<dt>郵便番号<span>Postal</span></dt>
+			<dd class="required"><input type="text" id="postal" name="postal" value="" onkeyup="AjaxZip3.zip2addr(this,'','address','address');" />　<a href="http://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号検索</a></dd>
+			
+			<dt>住所<span>Address</span></dt>
+			<dd><input type="text" id="address" name="address" value="" /></dd>
+			
+			<dt>電話番号<span>Phone Number</span></dt>
+			<dd><input type="tel" id="phone" name="phone" value="" /></dd>
+			
+			<dt>お問い合わせの内容<span>Mail Contents</span></dt>
+			<dd class="required"><textarea id="mail_contents" name="mail_contents" cols="40" rows="5"></textarea></dd>
+
+		</dl>
+		
+		<p id="form_submit"><input type="button" id="form_submit_button" value="送信する" /></p>
+	</form>
+
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>-->
+<script src="js/mailform-js.php"></script>
+
+
+<!-- フリガナ自動入力ライブラリここから -->
+<script src="js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+    $.fn.autoKana( '#name_1', '#read_1', {
+      katakana: false
+    });
+    $.fn.autoKana( '#name_2', '#read_2', {
+      katakana: false
+    });
+	})( jQuery );
+</script>
+<!-- フリガナ自動入力ライブラリここまで -->
+
+
+<!-- 住所自動入力ライブラリここから -->
+<script src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+</body>
+</html>

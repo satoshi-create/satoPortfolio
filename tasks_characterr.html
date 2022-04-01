@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tasks_character</title>
+    <meta name="discription" content="職業訓練でグラフィックデザインを学ぶSatoのポートフォリオです">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/tasks.css">
+    <link rel="stylesheet" type="text/css" href="css/ress.css">
+    <link href="css/jquery.mmenu.all.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <!--        ページ内ヌルヌル-->
+    <script type="text/javascript">
+        $(function() {
+            $('a[href^=#]').click(function() {
+                var speed = 1000;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({
+                    scrollTop: position
+                }, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+
+
+    <!--  ちょっとスクロールしたら「トップへ戻るボタン」を表示-->
+    <script>
+        $(function() {
+
+            var topBtn = $('.footer_cut');
+
+            topBtn.hide();
+            //スクロールが100に達したらボタン表示
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <!--mmenu-->
+    <script src="js/jquery.mmenu.all.js"></script>
+    <!--javascript追記-->
+    <script>
+        $(function() {
+            $("#menu").mmenu({
+                extensions: ["position-right"]
+            })
+        });
+    </script>
+
+
+
+
+
+
+</head>
+
+
+<body>
+    <!--       headerここから-->
+    <div class="nav">
+        <a href="home.html">
+            <img src="img/title.png"></a>
+    </div>
+
+    <div class="nav-sp sp">
+
+        <div id="page">
+            <div class="header">
+
+                <a href="#menu"></a>
+
+            </div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><span>TASKS</span>
+                    <ul>
+                        <li><a href="tasks_logo.html">ロゴ</a></li>
+                        <li><a href="tasks_characterr.html">キャラクター</a>
+                        </li>
+                        <li><a href="tasks_gousei.html">コラージュ</a></li>
+                        <li><a href="tasks_CD.html">CDジャケット</a></li>
+                        <li><a href="tasks_banner.html">バナー</a></li>
+                        <li><a href="tasks_map.html">地図</a></li>
+                        <li><a href="tasks_list.html">リスト</a></li>
+                        <li><a href="tasks_magazin.html">雑誌</a></li>
+                    </ul>
+                </li>
+                <li><span>PRIVATE</span>
+                    <ul>
+                        <li><a href="private_photo.html">PHOTO</a></li>
+                        <li><a href="private_illust.html">ILLUST</a></li>
+                    </ul>
+                </li>
+                <li><a href="">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+    </div>
+    <!--       コンテンツここから-->
+
+    <div class="tasks_img chara_img">
+
+
+        <div class="items_grid chara_img_items">
+
+            <div>
+                <div class="tasks_img_title">
+                    <img src="img/tasks_chara_title01.png">
+                </div>
+                <div class="chara_img_item">
+                    <img src="img/tasks_chara01.png">
+                </div>
+            </div>
+
+            <div>
+                <div class="tasks_img_title">
+                    <img src="img/tasks_chara_title02.png">
+                </div>
+                <div class="chara_img_item">
+                    <img src="img/tasks_chara02.png">
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <div class="tasks_text">
+
+            <div class="text_concept">
+                <h3 class="text_h3 concept">コンセプト</h3>
+                <div class="tasks_text-layout sp">
+                    <h4>マチるダとマモル</h4>
+                    <p>「マチるダ」は、ゆるキャラの生みの親である漫画家・みうらじゅん氏が約10年前に生み出した町田警察署のゆるキャラですが、その絶妙なネーミングセンス、造形にもかかわらず、あまりその存在が知られていないように思います。</p>
+                    <p>発表当時のみうらじゅん氏の記者会見によると、「マチるダ」の「る」は「るーる」の意味をこめて平仮名表記にしているそうです。</p>
+                    <p>そこで、本課題で「マチるダ」の相棒である男子高校生「マモル」を制作し、「マチるダ」と「マモル」をかけて町田警察署の啓発ポスター風にアレンジしました。
+                    </p>
+                    <h4>伝説の名横綱 双葉山</h4>
+                    <p>戦前・戦中に大相撲の世界で活躍した双葉山は、現代では神格化され、すべての力士の模範とされている大横綱ですが、すでに双葉山の雄姿を観たことがある相撲ファンも少なくなり、その実像はほとんど知られていません。</p>
+                    <p>『伝説の名横綱 双葉山のすべて』という本は、著者が、少年時代から双葉山を追いかけ、場所中の立ち居振る舞いからプライベートにわたるまでの双葉山のすべてを書き尽くした好著です。</p>
+                    <p>ぼくはこの本を読み、神格化された偶像ではなく、笑顔が似合う好青年だった双葉山の姿を知り、感銘をうけました。双葉山の魅力を多くの方に伝えられたらと思い、書籍のジャケット＆販促ポスターに使うことを想定して、キャラクターを描きました。</p>
+                </div>
+
+                <div class="tasks_text-layout pc">
+                    <h4>マチるダとマモル</h4>
+                    <p>マチるダ」は、ゆるキャラの生みの親である漫画家・みうらじゅん氏が約10年前に生み出した町田警察署のゆるキャラですが、その絶妙なネーミングセンス、造形にもかかわらず、あまりその存在が知られていないように思います。発表当時のみうらじゅん氏の記者会見によると、「マチるダ」の「る」は「るーる」の意味をこめて平仮名表記にしているそうです。</p>
+                    <p>そこで、本課題で「マチるダ」の相棒である男子高校生「マモル」を制作し、「マチるダ」と「マモル」をかけて町田警察署の啓発ポスター風にアレンジしました。
+                        <h4>伝説の名横綱 双葉山</h4>
+                        <p>戦前・戦中に大相撲の世界で活躍した双葉山は、現代では神格化され、すべての力士の模範とされている大横綱ですが、すでに双葉山の雄姿を観たことがある相撲ファンも少なくなり、その実像はほとんど知られていません。『伝説の名横綱 双葉山のすべて』という本は、著者が、少年時代から双葉山を追いかけ、場所中の立ち居振る舞いからプライベートにわたるまでの双葉山のすべてを書き尽くした好著です。</p>
+                        <p>ぼくはこの本を読み、神格化された偶像ではなく、笑顔が似合う好青年だった双葉山の姿を知り、感銘をうけました。双葉山の魅力を多くの方に伝えられたらと思い、書籍のジャケット＆販促ポスターに使うことを想定して、キャラクターを描きました。
+                        </p>
+
+                </div>
+
+                <div class="text_prosess">
+                    <h3 class="text_h3 prosess">制作過程</h3>
+                    <div class="tasks_text-layout sp">
+                        <h4>マチるダとマモル</h4>
+                        <p>「マモル」は、「マチるダ」の原画を下地にしてトレース後、アンカーポイントを追加・削除・変形するなど加工して制作しました。「マモル」は制作過程からして「マチるダ」の分身であり、彼女（＝ルールを）守る存在である、という意味をこめたつもりです。</p>
+                        <h4>伝説の名横綱 双葉山</h4>
+                        <P>『伝説の名横綱 双葉山のすべて』に載っていた双葉山の写真やエピソードをもとに下絵を描き、イラストレーターでトレースしました。</P>
+                        <P>書籍ジャケットを囲った土俵の模様はパターンブラシを、背景の放射線はグラデーションツールを使用しました。
+                            背景にある放射線、大相撲の「吊り屋根」から垂れる「四つ房」の色をイメージし、「東－緑」「西－白」「南－赤」「北－黒」となるように配色しました。</P>
+
+                    </div>
+
+                    <div class="tasks_text-layout pc">
+                        <h4>マチるダとマモル</h4>
+                        <p>「マモル」は、「マチるダ」の原画を下地にしてトレース後、アンカーポイントを追加・削除・変形するなど加工して制作しました。「マモル」は制作過程からして「マチるダ」の分身であり、彼女（＝ルールを）守る存在である、という意味をこめたつもりです。</p>
+                        <h4>伝説の名横綱 双葉山</h4>
+                        <P>伝説の名横綱 双葉山のすべて』に載っていた双葉山の写真やエピソードをもとに下絵を描き、イラストレーターでトレースしました。書籍ジャケットを囲った土俵の模様はパターンブラシを、背景の放射線はグラデーションツールを使用しました。背景にある放射線、大相撲の「吊り屋根」から垂れる「四つ房」の色をイメージし、「東－緑」「西－白」「南－赤」「北－黒」となるように配色しました。</P>
+
+
+                    </div>
+                </div>
+
+                <div class="text_time">
+                    <p>2018年9月 / 約15時間<br>
+                        <small>（制作時期 / 制作時間）</small></p>
+                    <img src="img/tasks_ai.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="moretasks pc">
+
+
+
+        <div class="moretasks_items_title">
+            <img src="img/tasks_moretasks.png">
+        </div>
+
+        <div class="moretasks_items">
+            <div class="moretasks_item sp">
+                <a href="tasks_characterr.html">
+                    <img src="img/home_tasks_chara.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_gousei.html">
+                    <img src="img/home_tasks_gousei.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_CD.html">
+                    <img src="img/home_tasks_CD.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_banner.html">
+                    <img src="img/home_tasks_banner.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_map.html">
+                    <img src="img/home_tasks_map.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_list.html">
+                    <img src="img/home_tasks_list.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_magazin.html">
+                    <img src="img/home_tasks_magazin.png">
+                </a>
+            </div>
+            <div class="moretasks_item">
+                <a href="tasks_logo.html">
+                    <img src="img/home_tasks_logo.png">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--         フッターここから      -->
+    <div class="footer">
+
+
+        <div class="footer_icon sp">
+            <div class="footer_icon-prev">
+                <a href="tasks_logo.html">
+                    <img src="img/tasks_icon_prev.png">
+                </a>
+            </div>
+            <div class="footer_icon-next">
+                <a href="tasks_gousei.html">
+                    <img src="img/tasks_icon_next.png">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-items">
+
+            <div class="footer-item box1">
+                <a href="">
+                    <p><small>TWITTER</small></p>
+                </a>
+            </div>
+            <div class="footer-item box2">
+                <a href="mailto:info@test.com">
+                    <p><small>MAIL</small></p>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer_copy"><small>&copy;2018 sato all right reserved</small></p>
+
+    </div>
+
+    <div class="footer_cut">
+        <a href="#">
+
+            <img src="img/tasks_logo_cut.png" onmouseover="this.src='img/tasks_logo_cut-hover.png'" onmouseout="this.src='img/tasks_logo_cut.png'" />
+
+        </a>
+    </div>
+
+
+
+</body>
+
+</html>
